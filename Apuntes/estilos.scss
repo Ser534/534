@@ -1,0 +1,65 @@
+//declaracion de variables y su asignacion de color. Esto sirve para c ambiar de forma dinamica el color de los objetos de una pagina.
+$colorcontenedor: green;
+$colorheader: darkblue ;
+$colorizquierdo: brown;
+$colorcentro: black;
+$colorderecho: orange;
+$colorfuente: violet;
+
+#contenedor{
+    background-color: $colorcontenedor;
+    width: 1910px;
+    position: relative;
+    //Si no pone un valor position:relative, el navegador usará la resolución actual de pantalla, si el sitio web es más grande que la resolución de la pantalla y los elementos posicionados exceden el tamaño de la resolución, quedarán ocultos salvo que se escale la página web, las barras de desplazamiento no servirán para mostrarlos
+    //position: absolute; => se puede utilizar todo el marco del navegador.
+    left: -7px;
+    top: -20px;
+}
+
+#header {
+  background-color: $colorheader;
+  align-content: center;
+  text-align: center;
+  float:inherit;
+  width: auto;
+  height: 100px;
+}
+
+#izquierdo {
+    background-color: $colorizquierdo;
+    float: left;
+    width: 200px;  
+    height: 200px;
+	position: absolute;
+    left: 0px;
+    top: 100px;
+	z-index: 1;
+}
+
+#centro {
+    background-color: $colorcentro;
+    align-content: center;
+    float: left;
+    width: auto;  
+    height: 800px;
+	position: absolute;
+    left: 200px;
+    top: 100px;
+	z-index: 2;
+
+}
+
+#derecho {
+    background-color: $colorderecho;
+    float: right;
+    width: 200px;  
+    height: auto;
+	z-index: 3;
+}
+h1{
+    color: $colorfuente;
+	border-left-color: aqua;
+}
+h3{
+    color: $colorfuente;
+}

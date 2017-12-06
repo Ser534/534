@@ -1,0 +1,18 @@
+INSTALAR NODEJS 8.X EN DEBIAN
+
+
+apt-get update
+apt-get install curl
+curl --silent --location https://deb.nodesource.com/setup_8.x | bash -
+apt-get install nodejs
+npm install express -g
+npm install express-generator -g
+
+INSTALAR BRACKETS
+apt update
+sudo apt install libpango1.0-0 libpangox-1.0-0
+sudo dpkg -i Brackets.Release.1.11.64-bit.deb
+En caso que no instale, tecleamos en la consola: apt install -f
+
+INSTALAR PREPROS
+dpkg -i Prepros-Linux-6.0.18.deb
