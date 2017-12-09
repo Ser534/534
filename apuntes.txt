@@ -16,3 +16,10 @@ En caso que no instale, tecleamos en la consola: apt install -f
 
 INSTALAR PREPROS
 dpkg -i Prepros-Linux-6.0.18.deb
+
+
+Borrar archivos y directorios
+rm nombre_del_[archivos
+
+rm -Rf nombre_del_archivo
+(R para borrar archivos o directorios vacios o llenos. f para que el OS no pida confirmación)
